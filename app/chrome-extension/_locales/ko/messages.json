@@ -1,0 +1,2817 @@
+{
+  "extensionName": {
+    "message": "ScaleMaker Chrome MCP",
+    "description": "확장 프로그램 이름"
+  },
+  "extensionDescription": {
+    "message": "크롬 브라우저와 연동하여 브라우저 기능을 제어하는 MCP 서버입니다.",
+    "description": "확장 프로그램 설명"
+  },
+  "nativeServerConfigLabel": {
+    "message": "네이티브 서버 설정",
+    "description": "네이티브 서버 설정의 주 섹션 제목"
+  },
+  "semanticEngineLabel": {
+    "message": "시맨틱 엔진",
+    "description": "시맨틱 엔진의 주 섹션 제목"
+  },
+  "embeddingModelLabel": {
+    "message": "임베딩 모델",
+    "description": "모델 선택의 주 섹션 제목"
+  },
+  "indexDataManagementLabel": {
+    "message": "인덱스 데이터 관리",
+    "description": "데이터 관리의 주 섹션 제목"
+  },
+  "modelCacheManagementLabel": {
+    "message": "모델 캐시 관리",
+    "description": "캐시 관리의 주 섹션 제목"
+  },
+  "statusLabel": {
+    "message": "상태",
+    "description": "활성/비활성 필터"
+  },
+  "runningStatusLabel": {
+    "message": "실행 상태",
+    "description": "서버 실행 상태 레이블"
+  },
+  "connectionStatusLabel": {
+    "message": "연결 상태",
+    "description": "연결 상태 레이블"
+  },
+  "lastUpdatedLabel": {
+    "message": "마지막 업데이트:",
+    "description": "마지막 업데이트 타임스탬프 레이블"
+  },
+  "connectButton": {
+    "message": "연결",
+    "description": "연결 버튼 텍스트"
+  },
+  "disconnectButton": {
+    "message": "연결 끊기",
+    "description": "연결 끊기 버튼 텍스트"
+  },
+  "connectingStatus": {
+    "message": "연결 중...",
+    "description": "연결 상태 메시지"
+  },
+  "connectedStatus": {
+    "message": "연결됨",
+    "description": "연결된 상태 메시지"
+  },
+  "disconnectedStatus": {
+    "message": "연결 끊김",
+    "description": "연결이 끊긴 상태 메시지"
+  },
+  "detectingStatus": {
+    "message": "감지 중...",
+    "description": "감지 상태 메시지"
+  },
+  "serviceRunningStatus": {
+    "message": "서비스 실행 중 (포트: $PORT$)",
+    "description": "포트 번호와 함께 서비스 실행 중 상태",
+    "placeholders": {
+      "port": {
+        "content": "$1",
+        "example": "12306"
+      }
+    }
+  },
+  "serviceNotConnectedStatus": {
+    "message": "서비스에 연결되지 않음",
+    "description": "서비스가 연결되지 않은 상태"
+  },
+  "connectedServiceNotStartedStatus": {
+    "message": "연결됨, 서비스 시작되지 않음",
+    "description": "연결되었지만 서비스가 시작되지 않은 상태"
+  },
+  "mcpServerConfigLabel": {
+    "message": "MCP 서버 설정",
+    "description": "MCP 서버 설정 섹션 레이블"
+  },
+  "connectionPortLabel": {
+    "message": "연결 포트",
+    "description": "연결 포트 입력 레이블"
+  },
+  "refreshStatusButton": {
+    "message": "상태 새로고침",
+    "description": "상태 새로고침 버튼 툴팁"
+  },
+  "copyConfigButton": {
+    "message": "설정 복사",
+    "description": "설정 복사 버튼 텍스트"
+  },
+  "retryButton": {
+    "message": "재시도",
+    "description": "재시도 버튼 텍스트"
+  },
+  "cancelButton": {
+    "message": "취소",
+    "description": "취소 버튼 텍스트"
+  },
+  "confirmButton": {
+    "message": "확인",
+    "description": "확인 버튼 텍스트"
+  },
+  "saveButton": {
+    "message": "저장",
+    "description": "저장 버튼 텍스트"
+  },
+  "closeButton": {
+    "message": "닫기",
+    "description": "닫기 버튼 텍스트"
+  },
+  "resetButton": {
+    "message": "초기화",
+    "description": "초기화 버튼 텍스트"
+  },
+  "initializingStatus": {
+    "message": "초기화 중...",
+    "description": "초기화 진행 메시지"
+  },
+  "processingStatus": {
+    "message": "처리 중...",
+    "description": "처리 진행 메시지"
+  },
+  "loadingStatus": {
+    "message": "로드 중...",
+    "description": "로드 진행 메시지"
+  },
+  "clearingStatus": {
+    "message": "삭제 중...",
+    "description": "삭제 진행 메시지"
+  },
+  "cleaningStatus": {
+    "message": "정리 중...",
+    "description": "정리 진행 메시지"
+  },
+  "downloadingStatus": {
+    "message": "다운로드 중...",
+    "description": "다운로드 진행 메시지"
+  },
+  "semanticEngineReadyStatus": {
+    "message": "시맨틱 엔진 준비 완료",
+    "description": "시맨틱 엔진 준비 완료 상태"
+  },
+  "semanticEngineInitializingStatus": {
+    "message": "시맨틱 엔진 초기화 중...",
+    "description": "시맨틱 엔진 초기화 상태"
+  },
+  "semanticEngineInitFailedStatus": {
+    "message": "시맨틱 엔진 초기화 실패",
+    "description": "시맨틱 엔진 초기화 실패 상태"
+  },
+  "semanticEngineNotInitStatus": {
+    "message": "시맨틱 엔진이 초기화되지 않음",
+    "description": "시맨틱 엔진이 초기화되지 않은 상태"
+  },
+  "initSemanticEngineButton": {
+    "message": "시맨틱 엔진 초기화",
+    "description": "시맨틱 엔진 초기화 버튼 텍스트"
+  },
+  "reinitializeButton": {
+    "message": "재초기화",
+    "description": "재초기화 버튼 텍스트"
+  },
+  "downloadingModelStatus": {
+    "message": "모델 다운로드 중... $PROGRESS$%",
+    "description": "백분율이 포함된 모델 다운로드 진행 상태",
+    "placeholders": {
+      "progress": {
+        "content": "$1",
+        "example": "50"
+      }
+    }
+  },
+  "switchingModelStatus": {
+    "message": "모델 전환 중...",
+    "description": "모델 전환 진행 메시지"
+  },
+  "modelLoadedStatus": {
+    "message": "모델 로드 완료",
+    "description": "모델 로드 성공 상태"
+  },
+  "modelFailedStatus": {
+    "message": "모델 로드 실패",
+    "description": "모델 로드 실패 상태"
+  },
+  "lightweightModelDescription": {
+    "message": "경량 다국어 모델",
+    "description": "경량 모델 옵션 설명"
+  },
+  "betterThanSmallDescription": {
+    "message": "e5-small보다 약간 크지만 성능이 더 좋습니다",
+    "description": "중간 모델 옵션 설명"
+  },
+  "multilingualModelDescription": {
+    "message": "다국어 시맨틱 모델",
+    "description": "다국어 모델 옵션 설명"
+  },
+  "fastPerformance": {
+    "message": "빠름",
+    "description": "빠른 성능 표시"
+  },
+  "balancedPerformance": {
+    "message": "균형",
+    "description": "균형 잡힌 성능 표시"
+  },
+  "accuratePerformance": {
+    "message": "정확",
+    "description": "정확한 성능 표시"
+  },
+  "networkErrorMessage": {
+    "message": "네트워크 연결 오류, 네트워크를 확인하고 다시 시도하세요",
+    "description": "네트워크 연결 오류 메시지"
+  },
+  "modelCorruptedErrorMessage": {
+    "message": "모델 파일이 손상되었거나 불완전합니다. 다운로드를 다시 시도하세요",
+    "description": "모델 손상 오류 메시지"
+  },
+  "unknownErrorMessage": {
+    "message": "알 수 없는 오류, 네트워크에서 HuggingFace에 접속할 수 있는지 확인하세요",
+    "description": "알 수 없는 오류 대체 메시지"
+  },
+  "popup_unknown_error": {
+    "message": "알 수 없는 오류",
+    "description": "오류 메시지가 없을 때의 대체 문구(범용)"
+  },
+  "permissionDeniedErrorMessage": {
+    "message": "권한이 거부되었습니다",
+    "description": "권한 거부 오류 메시지"
+  },
+  "timeoutErrorMessage": {
+    "message": "작업 시간 초과",
+    "description": "시간 초과 오류 메시지"
+  },
+  "indexedPagesLabel": {
+    "message": "인덱싱된 페이지",
+    "description": "인덱싱된 페이지 수 레이블"
+  },
+  "indexSizeLabel": {
+    "message": "인덱스 크기",
+    "description": "인덱스 크기 레이블"
+  },
+  "activeTabsLabel": {
+    "message": "활성 탭",
+    "description": "활성 탭 수 레이블"
+  },
+  "vectorDocumentsLabel": {
+    "message": "벡터 문서",
+    "description": "벡터 문서 수 레이블"
+  },
+  "cacheSizeLabel": {
+    "message": "캐시 크기",
+    "description": "캐시 크기 레이블"
+  },
+  "cacheEntriesLabel": {
+    "message": "캐시 항목",
+    "description": "캐시 항목 수 레이블"
+  },
+  "clearAllDataButton": {
+    "message": "모든 데이터 지우기",
+    "description": "모든 데이터 지우기 버튼 텍스트"
+  },
+  "clearAllCacheButton": {
+    "message": "모든 캐시 지우기",
+    "description": "모든 캐시 지우기 버튼 텍스트"
+  },
+  "cleanExpiredCacheButton": {
+    "message": "만료된 캐시 정리",
+    "description": "만료된 캐시 정리 버튼 텍스트"
+  },
+  "exportDataButton": {
+    "message": "데이터 내보내기",
+    "description": "데이터 내보내기 버튼 텍스트"
+  },
+  "importDataButton": {
+    "message": "데이터 가져오기",
+    "description": "데이터 가져오기 버튼 텍스트"
+  },
+  "confirmClearDataTitle": {
+    "message": "데이터 지우기 확인",
+    "description": "데이터 지우기 확인 대화상자 제목"
+  },
+  "settingsTitle": {
+    "message": "설정",
+    "description": "설정 대화상자 제목"
+  },
+  "aboutTitle": {
+    "message": "정보",
+    "description": "정보 대화상자 제목"
+  },
+  "helpTitle": {
+    "message": "도움말",
+    "description": "도움말 대화상자 제목"
+  },
+  "clearDataWarningMessage": {
+    "message": "이 작업은 다음을 포함한 모든 인덱싱된 웹페이지 콘텐츠와 벡터 데이터를 지웁니다:",
+    "description": "데이터 지우기 경고 메시지"
+  },
+  "clearDataList1": {
+    "message": "모든 웹페이지 텍스트 콘텐츠 인덱스",
+    "description": "데이터 지우기 목록 첫 번째 항목"
+  },
+  "clearDataList2": {
+    "message": "벡터 임베딩 데이터",
+    "description": "데이터 지우기 목록 두 번째 항목"
+  },
+  "clearDataList3": {
+    "message": "검색 기록 및 캐시",
+    "description": "데이터 지우기 목록 세 번째 항목"
+  },
+  "clearDataIrreversibleWarning": {
+    "message": "이 작업은 되돌릴 수 없습니다! 삭제 후에는 인덱스를 다시 생성하기 위해 웹페이지를 다시 방문해야 합니다.",
+    "description": "되돌릴 수 없는 작업 경고"
+  },
+  "confirmClearButton": {
+    "message": "삭제 확인",
+    "description": "삭제 작업 확인 버튼"
+  },
+  "cacheDetailsLabel": {
+    "message": "캐시 정보",
+    "description": "캐시 정보 섹션 레이블"
+  },
+  "noCacheDataMessage": {
+    "message": "캐시 데이터 없음",
+    "description": "사용 가능한 캐시 데이터 없음 메시지"
+  },
+  "loadingCacheInfoStatus": {
+    "message": "캐시 정보를 불러오는 중...",
+    "description": "캐시 정보 로드 상태"
+  },
+  "processingCacheStatus": {
+    "message": "캐시 처리 중...",
+    "description": "캐시 처리 상태"
+  },
+  "expiredLabel": {
+    "message": "만료됨",
+    "description": "만료된 항목 레이블"
+  },
+  "bookmarksBarLabel": {
+    "message": "북마크바",
+    "description": "북마크바 폴더 이름"
+  },
+  "newTabLabel": {
+    "message": "새 탭",
+    "description": "새 탭 레이블"
+  },
+  "currentPageLabel": {
+    "message": "현재 페이지",
+    "description": "현재 페이지 레이블"
+  },
+  "menuLabel": {
+    "message": "메뉴",
+    "description": "메뉴 접근성 레이블"
+  },
+  "navigationLabel": {
+    "message": "탐색",
+    "description": "탐색 접근성 레이블"
+  },
+  "mainContentLabel": {
+    "message": "주요 콘텐츠",
+    "description": "주요 콘텐츠 접근성 레이블"
+  },
+  "languageSelectorLabel": {
+    "message": "언어",
+    "description": "언어 선택기 레이블"
+  },
+  "themeLabel": {
+    "message": "테마",
+    "description": "테마 선택기 레이블"
+  },
+  "lightTheme": {
+    "message": "라이트",
+    "description": "라이트 테마 옵션"
+  },
+  "darkTheme": {
+    "message": "다크",
+    "description": "다크 테마 옵션"
+  },
+  "autoTheme": {
+    "message": "자동",
+    "description": "자동 테마 옵션"
+  },
+  "advancedSettingsLabel": {
+    "message": "고급 설정",
+    "description": "고급 설정 섹션 레이블"
+  },
+  "debugModeLabel": {
+    "message": "디버그 모드",
+    "description": "디버그 모드 토글 레이블"
+  },
+  "verboseLoggingLabel": {
+    "message": "상세 로깅",
+    "description": "상세 로깅 토글 레이블"
+  },
+  "successNotification": {
+    "message": "작업이 성공적으로 완료되었습니다",
+    "description": "일반 성공 알림"
+  },
+  "warningNotification": {
+    "message": "경고: 계속하기 전에 검토하세요",
+    "description": "일반 경고 알림"
+  },
+  "infoNotification": {
+    "message": "정보",
+    "description": "일반 정보 알림"
+  },
+  "configCopiedNotification": {
+    "message": "설정이 클립보드에 복사되었습니다",
+    "description": "설정 복사 성공 메시지"
+  },
+  "dataClearedNotification": {
+    "message": "데이터가 성공적으로 삭제되었습니다",
+    "description": "데이터 삭제 성공 메시지"
+  },
+  "bytesUnit": {
+    "message": "바이트",
+    "description": "바이트 단위"
+  },
+  "kilobytesUnit": {
+    "message": "KB",
+    "description": "킬로바이트 단위"
+  },
+  "megabytesUnit": {
+    "message": "MB",
+    "description": "메가바이트 단위"
+  },
+  "gigabytesUnit": {
+    "message": "GB",
+    "description": "기가바이트 단위"
+  },
+  "itemsUnit": {
+    "message": "개",
+    "description": "항목 개수 단위"
+  },
+  "pagesUnit": {
+    "message": "페이지",
+    "description": "페이지 수 단위"
+  },
+  "userscriptsManagerTitle": {
+    "message": "유저스크립트 관리",
+    "description": "options 페이지 제목"
+  },
+  "createRunSectionTitle": {
+    "message": "생성 / 실행",
+    "description": "options 의 신규 스크립트 작성 섹션"
+  },
+  "listSectionTitle": {
+    "message": "스크립트 목록",
+    "description": "options 의 등록된 스크립트 목록 섹션"
+  },
+  "emergencySwitchLabel": {
+    "message": "비상 스위치 (전체 비활성)",
+    "description": "모든 유저스크립트 일시 정지"
+  },
+  "nameLabel": {
+    "message": "이름",
+    "description": "스크립트 이름 라벨"
+  },
+  "matchesInputLabel": {
+    "message": "대상 URL (matches)",
+    "description": "어떤 사이트에서 실행할지 지정"
+  },
+  "excludesInputLabel": {
+    "message": "제외 URL (excludes)",
+    "description": "match 됐지만 제외할 사이트"
+  },
+  "tagsInputLabel": {
+    "message": "태그",
+    "description": "스크립트 분류 태그"
+  },
+  "scriptLabel": {
+    "message": "스크립트",
+    "description": "JavaScript 코드 본문"
+  },
+  "runAtLabel": {
+    "message": "실행 시점",
+    "description": "스크립트 주입 타이밍"
+  },
+  "runAtAuto": {
+    "message": "자동",
+    "description": "runtime 결정"
+  },
+  "runAtDocumentStart": {
+    "message": "document_start",
+    "description": "DOM 생성 전 즉시"
+  },
+  "runAtDocumentEnd": {
+    "message": "document_end",
+    "description": "DOM 완성 직후"
+  },
+  "runAtDocumentIdle": {
+    "message": "document_idle",
+    "description": "load + idle"
+  },
+  "worldLabel": {
+    "message": "실행 컨텍스트 (world)",
+    "description": "isolated vs main world"
+  },
+  "worldAuto": {
+    "message": "자동",
+    "description": "world 자동 결정"
+  },
+  "worldMain": {
+    "message": "main (페이지 컨텍스트)",
+    "description": "페이지의 JS 와 같은 world"
+  },
+  "worldIsolated": {
+    "message": "isolated (격리 컨텍스트)",
+    "description": "extension content script world"
+  },
+  "allFramesLabel": {
+    "message": "모든 프레임에서 실행",
+    "description": "iframe 포함"
+  },
+  "persistLabel": {
+    "message": "영구 등록",
+    "description": "한 번 실행이 아니라 등록"
+  },
+  "modeLabel": {
+    "message": "모드",
+    "description": "스크립트 실행 모드"
+  },
+  "modeAuto": {
+    "message": "자동",
+    "description": "스크립트 헤더로 자동 판단"
+  },
+  "modeOnce": {
+    "message": "1회 실행",
+    "description": "current tab 에 즉시 한 번"
+  },
+  "modePersistent": {
+    "message": "영구 등록",
+    "description": "matches 패턴으로 영구 주입"
+  },
+  "modeCss": {
+    "message": "CSS 주입",
+    "description": "JS 대신 CSS 적용"
+  },
+  "applyButton": {
+    "message": "적용",
+    "description": "변경사항 저장"
+  },
+  "deleteButton": {
+    "message": "삭제",
+    "description": "스크립트 삭제"
+  },
+  "runOnceButton": {
+    "message": "1회 실행",
+    "description": "지금 한 번만 실행"
+  },
+  "exportAllButton": {
+    "message": "전체 내보내기",
+    "description": "모든 스크립트 JSON export"
+  },
+  "statusAll": {
+    "message": "전체",
+    "description": "필터 - 전체"
+  },
+  "statusEnabled": {
+    "message": "활성",
+    "description": "필터 - 활성만"
+  },
+  "statusDisabled": {
+    "message": "비활성",
+    "description": "필터 - 비활성만"
+  },
+  "tableHeaderName": {
+    "message": "이름",
+    "description": "목록 테이블 헤더"
+  },
+  "tableHeaderRunAt": {
+    "message": "실행 시점",
+    "description": "목록 테이블 헤더"
+  },
+  "tableHeaderWorld": {
+    "message": "world",
+    "description": "목록 테이블 헤더"
+  },
+  "tableHeaderUpdated": {
+    "message": "수정 시각",
+    "description": "목록 테이블 헤더"
+  },
+  "queryLabel": {
+    "message": "검색",
+    "description": "스크립트 검색"
+  },
+  "domainLabel": {
+    "message": "도메인",
+    "description": "도메인 필터"
+  },
+  "placeholderOptional": {
+    "message": "(선택)",
+    "description": "선택 입력 안내"
+  },
+  "placeholderMatchesExample": {
+    "message": "예: https://*.example.com/*",
+    "description": "matches 패턴 예시"
+  },
+  "placeholderScriptHint": {
+    "message": "JavaScript 코드 (// ==UserScript== 헤더 지원)",
+    "description": "스크립트 입력 안내"
+  },
+  "placeholderDomainHint": {
+    "message": "예: example.com",
+    "description": "도메인 입력 예시"
+  },
+  "dnrFallbackLabel": {
+    "message": "DNR fallback (declarativeNetRequest)",
+    "description": "DNR 폴백 옵션"
+  },
+  "sidepanel_marker_search_placeholder": {
+    "message": "마킹 이름, 선택기 검색...",
+    "description": "요소 마킹 목록 검색창 placeholder"
+  },
+  "sidepanel_marker_add": {
+    "message": "마킹 추가",
+    "description": "요소 마킹 추가 버튼/제목"
+  },
+  "sidepanel_marker_edit": {
+    "message": "마킹 편집",
+    "description": "요소 마킹 편집 모달 제목"
+  },
+  "sidepanel_marker_name_placeholder": {
+    "message": "예: 로그인 버튼",
+    "description": "요소 마킹 이름 입력창 placeholder"
+  },
+  "sidepanel_marker_selector_type_label": {
+    "message": "선택기 유형",
+    "description": "요소 마킹 선택기 유형 라벨"
+  },
+  "sidepanel_marker_match_type_label": {
+    "message": "일치 유형",
+    "description": "요소 마킹 일치 유형 라벨"
+  },
+  "sidepanel_match_type_prefix": {
+    "message": "경로 접두사",
+    "description": "일치 유형 옵션: 경로 접두사"
+  },
+  "sidepanel_match_type_exact": {
+    "message": "정확히 일치",
+    "description": "일치 유형 옵션: 정확히 일치"
+  },
+  "sidepanel_selector_type_css": {
+    "message": "CSS 선택기",
+    "description": "선택기 유형 옵션: CSS 선택기"
+  },
+  "sidepanel_marker_selector_label": {
+    "message": "선택기",
+    "description": "요소 마킹 선택기 입력 라벨"
+  },
+  "sidepanel_marker_selector_placeholder": {
+    "message": "CSS 선택기 또는 XPath",
+    "description": "요소 마킹 선택기 입력창 placeholder"
+  },
+  "sidepanel_update_button": {
+    "message": "업데이트",
+    "description": "기존 항목 업데이트 버튼"
+  },
+  "sidepanel_marker_stats_filtered": {
+    "message": "검색 결과 $COUNT$개 마킹 (전체 $TOTAL$개, 도메인 $DOMAINS$개)",
+    "description": "요소 마킹 검색 결과 통계",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      },
+      "total": {
+        "content": "$2",
+        "example": "10"
+      },
+      "domains": {
+        "content": "$3",
+        "example": "2"
+      }
+    }
+  },
+  "sidepanel_marker_stats_all": {
+    "message": "전체 $TOTAL$개 마킹, 도메인 $DOMAINS$개",
+    "description": "요소 마킹 전체 통계",
+    "placeholders": {
+      "total": {
+        "content": "$1",
+        "example": "10"
+      },
+      "domains": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "sidepanel_marker_domain_count": {
+    "message": "$COUNT$개 마킹",
+    "description": "도메인별 마킹 개수",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "sidepanel_marker_verify": {
+    "message": "검증",
+    "description": "요소 마킹 검증 버튼"
+  },
+  "sidepanel_edit_button": {
+    "message": "편집",
+    "description": "편집 버튼(공용)"
+  },
+  "sidepanel_marker_no_match": {
+    "message": "일치하는 마킹을 찾을 수 없습니다",
+    "description": "요소 마킹 검색 결과 없음"
+  },
+  "sidepanel_clear_search_button": {
+    "message": "검색 지우기",
+    "description": "검색어 지우기 버튼"
+  },
+  "sidepanel_marker_empty": {
+    "message": "마킹된 요소가 없습니다",
+    "description": "요소 마킹 빈 상태 안내"
+  },
+  "sidepanel_marker_local_file": {
+    "message": "(로컬 파일)",
+    "description": "요소 마킹 도메인 미상 표시(로컬 파일)"
+  },
+  "sidepanel_marker_unknown_url": {
+    "message": "(알 수 없는 URL)",
+    "description": "요소 마킹 URL 미상 표시"
+  },
+  "sidepanel_flow_delete_confirm": {
+    "message": "이 흐름을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다",
+    "description": "흐름 삭제 확인 문구"
+  },
+  "sidepanel_marker_delete_confirm": {
+    "message": "\"$NAME$\" 마킹을 삭제하시겠습니까?",
+    "description": "요소 마킹 삭제 확인 문구",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "로그인 버튼"
+      }
+    }
+  },
+  "sidepanel_nav_trigger_title": {
+    "message": "페이지 전환 (드래그로 이동, 더블클릭으로 위치 초기화)",
+    "description": "사이드패널 네비게이터 트리거 버튼 안내"
+  },
+  "sidepanel_nav_switch_page": {
+    "message": "페이지 전환",
+    "description": "사이드패널 네비게이터 메뉴 제목"
+  },
+  "sidepanel_nav_workflows_title": {
+    "message": "흐름 관리",
+    "description": "네비게이터 메뉴: 흐름 관리 항목 제목"
+  },
+  "sidepanel_nav_workflows_desc": {
+    "message": "자동화 흐름을 녹화하고 재생합니다",
+    "description": "네비게이터 메뉴: 흐름 관리 항목 설명"
+  },
+  "sidepanel_nav_markers_title": {
+    "message": "요소 마킹 관리",
+    "description": "네비게이터 메뉴: 요소 마킹 관리 항목 제목"
+  },
+  "sidepanel_nav_markers_desc": {
+    "message": "페이지 요소 마킹을 관리합니다",
+    "description": "네비게이터 메뉴: 요소 마킹 관리 항목 설명"
+  },
+  "sidepanel_search_flows_placeholder": {
+    "message": "흐름 검색...",
+    "description": "흐름 목록 검색창 placeholder"
+  },
+  "sidepanel_refresh_button": {
+    "message": "새로고침",
+    "description": "흐름 목록 새로고침 버튼"
+  },
+  "sidepanel_current_page_only": {
+    "message": "현재 페이지만",
+    "description": "현재 페이지 흐름만 보기 체크박스 라벨"
+  },
+  "sidepanel_flow_count": {
+    "message": "흐름 $COUNT$개",
+    "description": "흐름 개수 표시",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sidepanel_no_matching_flows": {
+    "message": "일치하는 흐름이 없습니다",
+    "description": "흐름 검색 결과 없음"
+  },
+  "sidepanel_no_flows_yet": {
+    "message": "아직 흐름이 없습니다",
+    "description": "흐름 빈 상태 제목"
+  },
+  "sidepanel_record_first_flow": {
+    "message": "첫 자동화 흐름을 녹화해보세요",
+    "description": "흐름 빈 상태 안내"
+  },
+  "sidepanel_create_flow_button": {
+    "message": "흐름 만들기",
+    "description": "흐름 만들기 버튼"
+  },
+  "sidepanel_advanced_section": {
+    "message": "고급",
+    "description": "고급 설정 구분선 제목"
+  },
+  "sidepanel_run_history_title": {
+    "message": "실행 이력",
+    "description": "실행 이력 섹션 제목"
+  },
+  "sidepanel_no_run_history": {
+    "message": "아직 실행 이력이 없습니다",
+    "description": "실행 이력 빈 상태 안내"
+  },
+  "sidepanel_status_label": {
+    "message": "상태",
+    "description": "실행 상태 라벨"
+  },
+  "sidepanel_elapsed_time_label": {
+    "message": "소요 시간",
+    "description": "실행 소요 시간 라벨"
+  },
+  "sidepanel_step_label": {
+    "message": "단계",
+    "description": "실행 이력 단계 라벨"
+  },
+  "sidepanel_run_status_queued": {
+    "message": "대기 중",
+    "description": "실행 상태: 대기 중"
+  },
+  "sidepanel_run_status_running": {
+    "message": "실행 중",
+    "description": "실행 상태: 실행 중"
+  },
+  "sidepanel_run_status_paused": {
+    "message": "일시 정지됨",
+    "description": "실행 상태: 일시 정지됨"
+  },
+  "sidepanel_run_status_succeeded": {
+    "message": "성공",
+    "description": "실행 상태: 성공"
+  },
+  "sidepanel_run_status_failed": {
+    "message": "실패",
+    "description": "실행 상태: 실패"
+  },
+  "sidepanel_run_status_canceled": {
+    "message": "취소됨",
+    "description": "실행 상태: 취소됨"
+  },
+  "sidepanel_untitled_flow": {
+    "message": "제목 없음",
+    "description": "흐름 이름 미지정 시 기본값"
+  },
+  "sidepanel_no_description": {
+    "message": "설명 없음",
+    "description": "흐름 설명 미지정 시 기본값"
+  },
+  "sidepanel_run_flow_button": {
+    "message": "흐름 실행",
+    "description": "흐름 카드 실행 버튼"
+  },
+  "sidepanel_edit_flow_button": {
+    "message": "흐름 편집",
+    "description": "흐름 카드 편집 버튼"
+  },
+  "sidepanel_more_actions_button": {
+    "message": "더보기",
+    "description": "흐름 카드 더보기 버튼"
+  },
+  "sidepanel_export_button": {
+    "message": "내보내기",
+    "description": "흐름 내보내기 메뉴 항목"
+  },
+  "sidepanel_record_start": {
+    "message": "녹화 시작",
+    "description": "녹화 시작 버튼"
+  },
+  "sidepanel_record_stop": {
+    "message": "녹화 중지",
+    "description": "녹화 중지 버튼"
+  },
+  "sidepanel_record_recording": {
+    "message": "녹화 중",
+    "description": "녹화 중 표시"
+  },
+  "sidepanel_record_paused": {
+    "message": "일시정지",
+    "description": "녹화 일시정지 표시"
+  },
+  "sidepanel_record_stopping": {
+    "message": "마무리하는 중",
+    "description": "녹화 마무리 표시"
+  },
+  "sidepanel_record_hint": {
+    "message": "현재 탭에서 클릭, 입력, 페이지 이동을 기록합니다",
+    "description": "녹화 시작 안내"
+  },
+  "sidepanel_record_steps": {
+    "message": "단계 $COUNT$개",
+    "description": "잡힌 단계 수",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "sidepanel_record_start_failed": {
+    "message": "녹화를 시작하지 못했습니다: $REASON$",
+    "description": "녹화 시작 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "no active tab"
+      }
+    }
+  },
+  "sidepanel_record_stop_failed": {
+    "message": "녹화를 멈추지 못했습니다: $REASON$",
+    "description": "녹화 중지 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "no active recording"
+      }
+    }
+  },
+  "sidepanel_record_nothing_captured": {
+    "message": "기록된 단계가 없어 저장하지 않았습니다",
+    "description": "녹화 결과 없음"
+  },
+  "sidepanel_wizard_title": {
+    "message": "흐름 저장",
+    "description": "저장 화면 제목"
+  },
+  "sidepanel_wizard_loading": {
+    "message": "불러오는 중",
+    "description": "저장 화면 로딩"
+  },
+  "sidepanel_wizard_load_failed": {
+    "message": "흐름을 불러오지 못했습니다",
+    "description": "흐름 로딩 실패"
+  },
+  "sidepanel_wizard_name_label": {
+    "message": "이름",
+    "description": "흐름 이름 라벨"
+  },
+  "sidepanel_wizard_name_required": {
+    "message": "이름을 입력해 주세요",
+    "description": "이름 미입력"
+  },
+  "sidepanel_wizard_start_url_label": {
+    "message": "시작 URL",
+    "description": "시작 URL 라벨"
+  },
+  "sidepanel_wizard_start_url_hint": {
+    "message": "실행할 때 작업 탭이 없으면 이 주소로 새 탭을 엽니다",
+    "description": "시작 URL 설명"
+  },
+  "sidepanel_wizard_variables_title": {
+    "message": "감지된 변수",
+    "description": "변수 목록 제목"
+  },
+  "sidepanel_wizard_variables_empty": {
+    "message": "감지된 변수가 없습니다",
+    "description": "변수 없음"
+  },
+  "sidepanel_wizard_variable_sensitive": {
+    "message": "민감",
+    "description": "민감 변수 표시"
+  },
+  "sidepanel_wizard_variable_sensitive_hint": {
+    "message": "민감 변수의 값은 흐름에 저장하지 않습니다. 실행할 때 입력받습니다",
+    "description": "민감 변수 설명"
+  },
+  "sidepanel_wizard_duplicate_variable": {
+    "message": "변수 이름이 겹칩니다: $NAME$",
+    "description": "변수 이름 중복",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "password"
+      }
+    }
+  },
+  "sidepanel_wizard_invalid_variable": {
+    "message": "변수 이름은 영문자나 밑줄로 시작하고 영문자, 숫자, 밑줄만 쓸 수 있습니다",
+    "description": "변수 이름 형식 오류"
+  },
+  "sidepanel_wizard_steps_title": {
+    "message": "단계 $COUNT$개",
+    "description": "단계 목록 제목",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "sidepanel_wizard_no_steps": {
+    "message": "기록된 단계가 없습니다",
+    "description": "단계 없음"
+  },
+  "sidepanel_wizard_step_delete": {
+    "message": "단계 삭제",
+    "description": "단계 삭제 버튼"
+  },
+  "sidepanel_wizard_test_run": {
+    "message": "시험 실행",
+    "description": "시험 실행 버튼"
+  },
+  "sidepanel_wizard_test_running": {
+    "message": "시험 실행 중",
+    "description": "시험 실행 중"
+  },
+  "sidepanel_wizard_test_result": {
+    "message": "성공 $OK$, 실패 $FAIL$, $SEC$초",
+    "description": "시험 실행 결과",
+    "placeholders": {
+      "fail": {
+        "content": "$2",
+        "example": "0"
+      },
+      "ok": {
+        "content": "$1",
+        "example": "6"
+      },
+      "sec": {
+        "content": "$3",
+        "example": "4.2"
+      }
+    }
+  },
+  "sidepanel_wizard_test_needs_url": {
+    "message": "시험 실행을 하려면 시작 URL 이 필요합니다",
+    "description": "시험 실행에 URL 필요"
+  },
+  "sidepanel_wizard_save_publish": {
+    "message": "저장하고 발행",
+    "description": "저장하고 발행 버튼"
+  },
+  "sidepanel_wizard_save_only": {
+    "message": "저장만",
+    "description": "저장만 버튼"
+  },
+  "sidepanel_wizard_close": {
+    "message": "닫기",
+    "description": "닫기 버튼"
+  },
+  "sidepanel_wizard_saved": {
+    "message": "저장했습니다",
+    "description": "저장 완료"
+  },
+  "sidepanel_wizard_published": {
+    "message": "발행했습니다",
+    "description": "발행 완료"
+  },
+  "sidepanel_wizard_save_failed": {
+    "message": "저장하지 못했습니다: $REASON$",
+    "description": "저장 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "storage error"
+      }
+    }
+  },
+  "sidepanel_wizard_publish_failed": {
+    "message": "발행하지 못했습니다: $REASON$",
+    "description": "발행 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "flow not found"
+      }
+    }
+  },
+  "sidepanel_step_type_navigate": {
+    "message": "이동",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_click": {
+    "message": "클릭",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_dblclick": {
+    "message": "더블클릭",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_fill": {
+    "message": "입력",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_key": {
+    "message": "키 입력",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_scroll": {
+    "message": "스크롤",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_wait": {
+    "message": "대기",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_assert": {
+    "message": "확인",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_extract": {
+    "message": "값 추출",
+    "description": "단계 유형"
+  },
+  "sidepanel_step_type_screenshot": {
+    "message": "화면 저장",
+    "description": "단계 유형"
+  },
+  "sidepanel_runvars_title": {
+    "message": "실행에 필요한 값",
+    "description": "실행 변수 입력 제목"
+  },
+  "sidepanel_runvars_hint": {
+    "message": "민감값은 이 창에서만 쓰이고 저장하지 않습니다",
+    "description": "실행 변수 안내"
+  },
+  "sidepanel_runvars_run": {
+    "message": "실행",
+    "description": "실행 버튼"
+  },
+  "sidepanel_runvars_cancel": {
+    "message": "취소",
+    "description": "취소 버튼"
+  },
+  "sidepanel_published_badge": {
+    "message": "발행됨",
+    "description": "발행됨 배지"
+  },
+  "sidepanel_republish_badge": {
+    "message": "수정 후 재발행 필요",
+    "description": "재발행 필요 배지"
+  },
+  "sidepanel_publish_action": {
+    "message": "발행",
+    "description": "발행 메뉴"
+  },
+  "sidepanel_unpublish_action": {
+    "message": "발행 해제",
+    "description": "발행 해제 메뉴"
+  },
+  "sidepanel_unpublished": {
+    "message": "발행을 해제했습니다",
+    "description": "발행 해제 완료"
+  },
+  "sidepanel_publish_failed": {
+    "message": "발행하지 못했습니다: $REASON$",
+    "description": "발행 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "flow not found"
+      }
+    }
+  },
+  "sidepanel_unpublish_failed": {
+    "message": "발행을 해제하지 못했습니다: $REASON$",
+    "description": "발행 해제 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "storage error"
+      }
+    }
+  },
+  "sidepanel_run_running": {
+    "message": "실행 중",
+    "description": "실행 중 표시"
+  },
+  "sidepanel_run_succeeded": {
+    "message": "실행 성공 (단계 $COUNT$개, $SEC$초)",
+    "description": "실행 성공",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      },
+      "sec": {
+        "content": "$2",
+        "example": "4.2"
+      }
+    }
+  },
+  "sidepanel_run_failed": {
+    "message": "실행 실패: $REASON$",
+    "description": "실행 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "step_3: element not found"
+      }
+    }
+  },
+  "sidepanel_flow_delete_failed": {
+    "message": "삭제하지 못했습니다: $REASON$",
+    "description": "삭제 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "storage error"
+      }
+    }
+  },
+  "sidepanel_flow_export_failed": {
+    "message": "내보내지 못했습니다: $REASON$",
+    "description": "내보내기 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "flow not found"
+      }
+    }
+  },
+  "sidepanel_record_no_tab": {
+    "message": "녹화할 탭을 찾지 못했습니다",
+    "description": "녹화할 탭 없음"
+  },
+  "sidepanel_record_restricted_url": {
+    "message": "이 페이지에서는 녹화할 수 없습니다. 일반 웹페이지를 연 뒤 다시 시작해 주세요",
+    "description": "녹화 불가 주소 안내"
+  },
+  "sidepanel_search_hides_flows": {
+    "message": "검색어에 걸려 보이지 않습니다. 저장된 흐름은 모두 $COUNT$개입니다",
+    "description": "검색 때문에 목록이 빈 경우",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "sidepanel_daily_tab_title": {
+    "message": "매일 작업",
+    "description": "매일 작업 탭 이름"
+  },
+  "sidepanel_daily_tab_desc": {
+    "message": "예약해 둔 작업과 실행 이력",
+    "description": "매일 작업 탭 설명"
+  },
+  "sidepanel_daily_title": {
+    "message": "매일 작업",
+    "description": "매일 작업 화면 제목"
+  },
+  "sidepanel_daily_count": {
+    "message": "예약 $COUNT$개",
+    "description": "예약 개수",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "sidepanel_daily_refresh": {
+    "message": "새로 고침",
+    "description": "새로 고침 버튼"
+  },
+  "sidepanel_daily_chrome_note": {
+    "message": "예약은 크롬이 켜져 있을 때만 실행됩니다. 크롬이 꺼져 있던 시간의 실행은 건너뜁니다",
+    "description": "예약 실행 조건 안내"
+  },
+  "sidepanel_daily_empty_title": {
+    "message": "아직 예약한 작업이 없습니다",
+    "description": "매일 작업 빈 상태 제목"
+  },
+  "sidepanel_daily_empty_hint": {
+    "message": "흐름 카드의 예약 버튼으로 시작하세요",
+    "description": "매일 작업 빈 상태 안내"
+  },
+  "sidepanel_daily_empty_action": {
+    "message": "흐름 탭으로 가기",
+    "description": "흐름 탭으로 가는 버튼"
+  },
+  "sidepanel_daily_kind_flow": {
+    "message": "흐름",
+    "description": "예약 대상 종류: 흐름"
+  },
+  "sidepanel_daily_kind_shortcut": {
+    "message": "단축",
+    "description": "예약 대상 종류: 단축"
+  },
+  "sidepanel_daily_next_run": {
+    "message": "다음 실행 $TIME$",
+    "description": "다음 실행 시각",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "08:00"
+      }
+    }
+  },
+  "sidepanel_daily_paused": {
+    "message": "꺼짐",
+    "description": "예약이 꺼져 있음"
+  },
+  "sidepanel_daily_enable_label": {
+    "message": "켜기",
+    "description": "예약 켜기 스위치"
+  },
+  "sidepanel_daily_last_none": {
+    "message": "실행 기록 없음",
+    "description": "실행 기록 없음"
+  },
+  "sidepanel_daily_expand": {
+    "message": "펼치기",
+    "description": "이력 펼치기"
+  },
+  "sidepanel_daily_collapse": {
+    "message": "접기",
+    "description": "이력 접기"
+  },
+  "sidepanel_daily_run_now": {
+    "message": "지금 실행",
+    "description": "지금 실행 버튼"
+  },
+  "sidepanel_daily_edit": {
+    "message": "예약 수정",
+    "description": "예약 수정 버튼"
+  },
+  "sidepanel_daily_remove": {
+    "message": "예약 삭제",
+    "description": "예약 삭제 버튼"
+  },
+  "sidepanel_daily_remove_confirm": {
+    "message": "이 예약을 지울까요? 실행 이력은 남습니다",
+    "description": "예약 삭제 확인"
+  },
+  "sidepanel_daily_removed": {
+    "message": "예약을 지웠습니다",
+    "description": "예약 삭제 결과"
+  },
+  "sidepanel_daily_saved": {
+    "message": "예약을 저장했습니다",
+    "description": "예약 저장 결과"
+  },
+  "sidepanel_daily_save_failed": {
+    "message": "예약을 저장하지 못했습니다: $REASON$",
+    "description": "예약 저장 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "no response from background"
+      }
+    }
+  },
+  "sidepanel_daily_toggle_failed": {
+    "message": "예약을 켜거나 끄지 못했습니다: $REASON$",
+    "description": "예약 토글 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "no response from background"
+      }
+    }
+  },
+  "sidepanel_daily_run_started": {
+    "message": "지금 실행을 대기열에 넣었습니다",
+    "description": "지금 실행 시작"
+  },
+  "sidepanel_daily_run_failed": {
+    "message": "실행을 시작하지 못했습니다: $REASON$",
+    "description": "지금 실행 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "no response from background"
+      }
+    }
+  },
+  "sidepanel_daily_summary_daily": {
+    "message": "매일 $TIMES$",
+    "description": "매일 예약 요약",
+    "placeholders": {
+      "times": {
+        "content": "$1",
+        "example": "08:00"
+      }
+    }
+  },
+  "sidepanel_daily_summary_days": {
+    "message": "$DAYS$ $TIMES$",
+    "description": "요일 예약 요약",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "월 수 금"
+      },
+      "times": {
+        "content": "$2",
+        "example": "08:00"
+      }
+    }
+  },
+  "sidepanel_daily_summary_unknown": {
+    "message": "예약 정보 없음",
+    "description": "예약 표현을 읽지 못함"
+  },
+  "sidepanel_daily_every_15m": {
+    "message": "15분마다",
+    "description": "간격 15분"
+  },
+  "sidepanel_daily_every_1h": {
+    "message": "1시간마다",
+    "description": "간격 1시간"
+  },
+  "sidepanel_daily_every_6h": {
+    "message": "6시간마다",
+    "description": "간격 6시간"
+  },
+  "sidepanel_daily_every_24h": {
+    "message": "24시간마다",
+    "description": "간격 24시간"
+  },
+  "sidepanel_daily_day_sun": {
+    "message": "일",
+    "description": "요일: 일"
+  },
+  "sidepanel_daily_day_mon": {
+    "message": "월",
+    "description": "요일: 월"
+  },
+  "sidepanel_daily_day_tue": {
+    "message": "화",
+    "description": "요일: 화"
+  },
+  "sidepanel_daily_day_wed": {
+    "message": "수",
+    "description": "요일: 수"
+  },
+  "sidepanel_daily_day_thu": {
+    "message": "목",
+    "description": "요일: 목"
+  },
+  "sidepanel_daily_day_fri": {
+    "message": "금",
+    "description": "요일: 금"
+  },
+  "sidepanel_daily_day_sat": {
+    "message": "토",
+    "description": "요일: 토"
+  },
+  "sidepanel_daily_next_none": {
+    "message": "예정 없음",
+    "description": "다음 실행 없음"
+  },
+  "sidepanel_daily_next_soon": {
+    "message": "곧",
+    "description": "다음 실행이 곧"
+  },
+  "sidepanel_daily_next_in_minutes": {
+    "message": "$MIN$분 뒤",
+    "description": "다음 실행까지 분",
+    "placeholders": {
+      "min": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "sidepanel_daily_next_today": {
+    "message": "오늘 $TIME$",
+    "description": "오늘 실행",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "08:00"
+      }
+    }
+  },
+  "sidepanel_daily_next_tomorrow": {
+    "message": "내일 $TIME$",
+    "description": "내일 실행",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "08:00"
+      }
+    }
+  },
+  "sidepanel_daily_status_success": {
+    "message": "성공",
+    "description": "실행 상태: 성공"
+  },
+  "sidepanel_daily_status_failed": {
+    "message": "실패",
+    "description": "실행 상태: 실패"
+  },
+  "sidepanel_daily_status_stopped": {
+    "message": "중단",
+    "description": "실행 상태: 중단"
+  },
+  "sidepanel_daily_status_timeout": {
+    "message": "시간 초과",
+    "description": "실행 상태: 시간 초과"
+  },
+  "sidepanel_daily_status_interrupted": {
+    "message": "끊김",
+    "description": "실행 상태: 끊김"
+  },
+  "sidepanel_daily_status_skipped_queue": {
+    "message": "대기 중 건너뜀",
+    "description": "실행 상태: 대기 중 건너뜀"
+  },
+  "sidepanel_daily_status_login_required": {
+    "message": "로그인 필요",
+    "description": "실행 상태: 로그인 필요"
+  },
+  "sidepanel_daily_status_user_took_over_tab": {
+    "message": "사용자가 탭 사용",
+    "description": "실행 상태: 사용자가 탭 사용"
+  },
+  "sidepanel_daily_status_running": {
+    "message": "실행 중",
+    "description": "실행 상태: 실행 중"
+  },
+  "sidepanel_daily_history_filter": {
+    "message": "상태",
+    "description": "이력 상태 필터 이름"
+  },
+  "sidepanel_daily_history_all": {
+    "message": "전체",
+    "description": "이력 상태 필터: 전체"
+  },
+  "sidepanel_daily_history_empty": {
+    "message": "실행 이력이 없습니다",
+    "description": "이력 없음"
+  },
+  "sidepanel_daily_history_loading": {
+    "message": "읽는 중",
+    "description": "이력 읽는 중"
+  },
+  "sidepanel_daily_history_failed": {
+    "message": "이력을 읽지 못했습니다: $REASON$",
+    "description": "이력 읽기 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "no response from background"
+      }
+    }
+  },
+  "sidepanel_daily_history_more": {
+    "message": "$COUNT$건 더 보기",
+    "description": "이력 더 보기",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "sidepanel_daily_history_step": {
+    "message": "실패 단계 $INDEX$ ($TOOL$)",
+    "description": "실패 단계",
+    "placeholders": {
+      "index": {
+        "content": "$1",
+        "example": "2"
+      },
+      "tool": {
+        "content": "$2",
+        "example": "chrome_click_element"
+      }
+    }
+  },
+  "sidepanel_daily_history_error": {
+    "message": "오류: $MESSAGE$",
+    "description": "실행 오류",
+    "placeholders": {
+      "message": {
+        "content": "$1",
+        "example": "element not found"
+      }
+    }
+  },
+  "sidepanel_daily_history_duration": {
+    "message": "$SEC$초 걸림",
+    "description": "걸린 시간",
+    "placeholders": {
+      "sec": {
+        "content": "$1",
+        "example": "4.2"
+      }
+    }
+  },
+  "sidepanel_daily_history_trigger_manual": {
+    "message": "수동",
+    "description": "수동 실행"
+  },
+  "sidepanel_daily_history_trigger_scheduled": {
+    "message": "예약",
+    "description": "예약 실행"
+  },
+  "sidepanel_daily_rerun": {
+    "message": "다시 실행",
+    "description": "다시 실행 버튼"
+  },
+  "sidepanel_daily_open_screenshot": {
+    "message": "스크린샷 열기",
+    "description": "스크린샷 열기 버튼"
+  },
+  "sidepanel_daily_screenshot_missing": {
+    "message": "스크린샷 파일을 찾지 못했습니다",
+    "description": "스크린샷 없음"
+  },
+  "sidepanel_daily_screenshot_alt": {
+    "message": "실패 화면",
+    "description": "실패 화면 대체 문구"
+  },
+  "sidepanel_daily_form_title": {
+    "message": "$NAME$ 예약",
+    "description": "예약 폼 제목",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "주문 확인"
+      }
+    }
+  },
+  "sidepanel_daily_form_mode": {
+    "message": "반복 방식",
+    "description": "반복 방식"
+  },
+  "sidepanel_daily_form_mode_daily": {
+    "message": "매일",
+    "description": "반복 방식: 매일"
+  },
+  "sidepanel_daily_form_mode_weekdays": {
+    "message": "요일 선택",
+    "description": "반복 방식: 요일 선택"
+  },
+  "sidepanel_daily_form_mode_every": {
+    "message": "간격",
+    "description": "반복 방식: 간격"
+  },
+  "sidepanel_daily_form_times": {
+    "message": "시각",
+    "description": "시각 목록"
+  },
+  "sidepanel_daily_form_add_time": {
+    "message": "시각 추가",
+    "description": "시각 추가 버튼"
+  },
+  "sidepanel_daily_form_remove_time": {
+    "message": "삭제",
+    "description": "시각 삭제 버튼"
+  },
+  "sidepanel_daily_form_days": {
+    "message": "요일",
+    "description": "요일 선택"
+  },
+  "sidepanel_daily_form_every": {
+    "message": "간격",
+    "description": "간격 선택"
+  },
+  "sidepanel_daily_form_notify": {
+    "message": "실패하면 알림 보내기",
+    "description": "알림 옵션"
+  },
+  "sidepanel_daily_form_report": {
+    "message": "결과를 파일로 저장",
+    "description": "결과 파일 옵션"
+  },
+  "sidepanel_daily_form_enabled": {
+    "message": "예약 켜기",
+    "description": "예약 켜기 옵션"
+  },
+  "sidepanel_daily_form_variables": {
+    "message": "변수 값",
+    "description": "변수 값 입력"
+  },
+  "sidepanel_daily_form_save": {
+    "message": "예약 저장",
+    "description": "예약 저장 버튼"
+  },
+  "sidepanel_daily_form_cancel": {
+    "message": "취소",
+    "description": "예약 폼 취소"
+  },
+  "sidepanel_daily_error_no_times": {
+    "message": "시각을 한 개 이상 넣어 주세요",
+    "description": "시각 없음"
+  },
+  "sidepanel_daily_error_invalid_time": {
+    "message": "시각 형식이 올바르지 않습니다 ($VALUE$)",
+    "description": "시각 형식 오류",
+    "placeholders": {
+      "value": {
+        "content": "$1",
+        "example": "09:00"
+      }
+    }
+  },
+  "sidepanel_daily_error_duplicate_time": {
+    "message": "같은 시각이 두 번 있습니다 ($VALUE$)",
+    "description": "시각 중복",
+    "placeholders": {
+      "value": {
+        "content": "$1",
+        "example": "09:00"
+      }
+    }
+  },
+  "sidepanel_daily_error_too_many_times": {
+    "message": "시각은 최대 $MAX$개까지입니다",
+    "description": "시각 개수 초과",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "sidepanel_daily_error_gap_too_small": {
+    "message": "시각 사이는 $MIN$분 이상 떨어져야 합니다",
+    "description": "시각 간격 부족",
+    "placeholders": {
+      "min": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "sidepanel_daily_error_no_days": {
+    "message": "요일을 한 개 이상 골라 주세요",
+    "description": "요일 없음"
+  },
+  "sidepanel_daily_error_invalid_every": {
+    "message": "간격을 골라 주세요",
+    "description": "간격 없음"
+  },
+  "sidepanel_daily_block_start_url": {
+    "message": "이 흐름에는 시작 URL 이 없어 예약할 수 없습니다. 저장 화면에서 시작 URL 을 입력하세요",
+    "description": "시작 주소 없음"
+  },
+  "sidepanel_daily_block_not_published": {
+    "message": "발행된 흐름만 예약할 수 있습니다",
+    "description": "발행되지 않음"
+  },
+  "sidepanel_daily_block_sensitive": {
+    "message": "민감 변수가 있는 흐름은 예약할 수 없습니다 (값을 저장하지 않기 때문입니다)",
+    "description": "민감 변수 있음"
+  },
+  "sidepanel_daily_block_open_wizard": {
+    "message": "저장 화면 열기",
+    "description": "저장 화면 열기 버튼"
+  },
+  "sidepanel_daily_schedule_button": {
+    "message": "예약",
+    "description": "흐름 카드 예약 버튼"
+  },
+  "sidepanel_daily_badge_next": {
+    "message": "다음 $TIME$",
+    "description": "카드 예약 배지",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "08:00"
+      }
+    }
+  },
+  "sidepanel_daily_last_success": {
+    "message": "마지막 성공 $TIME$",
+    "description": "마지막 성공 시각",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "08:00"
+      }
+    }
+  },
+  "sidepanel_card_status_label": {
+    "message": "상태",
+    "description": "카드 정보 목록: 상태 라벨"
+  },
+  "sidepanel_card_status_published": {
+    "message": "발행됨 · Claude 에서 실행할 수 있어요",
+    "description": "카드 상태 값: 발행됨"
+  },
+  "sidepanel_card_status_needs_republish": {
+    "message": "수정됨 · 다시 발행해야 반영돼요",
+    "description": "카드 상태 값: 재발행 필요"
+  },
+  "sidepanel_card_status_draft": {
+    "message": "저장만 됨 · 발행하면 Claude 에서 실행돼요",
+    "description": "카드 상태 값: 미발행"
+  },
+  "sidepanel_card_site_label": {
+    "message": "사이트",
+    "description": "카드 정보 목록: 사이트 라벨"
+  },
+  "sidepanel_card_last_run_label": {
+    "message": "마지막 실행",
+    "description": "카드 정보 목록: 마지막 실행 라벨"
+  },
+  "sidepanel_card_last_run_success": {
+    "message": "성공 · $TIME$",
+    "description": "카드 마지막 실행 값: 성공",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "오늘 00:12"
+      }
+    }
+  },
+  "sidepanel_card_last_run_failed": {
+    "message": "실패 · $TIME$",
+    "description": "카드 마지막 실행 값: 실패",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "어제 21:10"
+      }
+    }
+  },
+  "sidepanel_card_last_run_none": {
+    "message": "아직 실행한 적 없어요",
+    "description": "카드 마지막 실행 값: 기록 없음"
+  },
+  "sidepanel_card_next_schedule_label": {
+    "message": "다음 예약",
+    "description": "카드 정보 목록: 다음 예약 라벨"
+  },
+  "sidepanel_card_description_label": {
+    "message": "설명",
+    "description": "카드 정보 목록: 설명 라벨"
+  },
+  "sidepanel_card_day_today": {
+    "message": "오늘 $TIME$",
+    "description": "카드 시각: 오늘",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "00:12"
+      }
+    }
+  },
+  "sidepanel_card_day_yesterday": {
+    "message": "어제 $TIME$",
+    "description": "카드 시각: 어제",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "21:10"
+      }
+    }
+  },
+  "sidepanel_card_run_action": {
+    "message": "실행",
+    "description": "카드 버튼: 실행"
+  },
+  "sidepanel_card_schedule_action": {
+    "message": "예약",
+    "description": "카드 버튼: 예약"
+  },
+  "sidepanel_card_edit_action": {
+    "message": "편집",
+    "description": "카드 버튼: 편집"
+  },
+  "sidepanel_card_more_action": {
+    "message": "더보기",
+    "description": "카드 버튼: 더보기"
+  },
+  "sidepanel_daily_filter_site_all": {
+    "message": "전체 사이트",
+    "description": "사이트 필터: 전체"
+  },
+  "sidepanel_daily_filter_published": {
+    "message": "발행됨",
+    "description": "필터: 발행됨"
+  },
+  "sidepanel_daily_filter_scheduled": {
+    "message": "예약 있음",
+    "description": "필터: 예약 있음"
+  },
+  "sidepanel_daily_filter_recent_failed": {
+    "message": "최근 실패",
+    "description": "필터: 최근 실패"
+  },
+  "sidepanel_daily_filter_clear": {
+    "message": "필터 지우기",
+    "description": "필터 지우기"
+  },
+  "sidepanel_daily_import_button": {
+    "message": "가져오기",
+    "description": "가져오기 버튼"
+  },
+  "sidepanel_daily_import_title": {
+    "message": "흐름 가져오기",
+    "description": "가져오기 제목"
+  },
+  "sidepanel_daily_import_pick": {
+    "message": "JSON 파일 고르기",
+    "description": "파일 고르기"
+  },
+  "sidepanel_daily_import_preview_count": {
+    "message": "흐름 $COUNT$개",
+    "description": "미리보기 개수",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "sidepanel_daily_import_steps": {
+    "message": "단계 $COUNT$개",
+    "description": "미리보기 단계 수",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "sidepanel_daily_import_conflict": {
+    "message": "같은 id 의 흐름이 이미 있습니다",
+    "description": "id 충돌"
+  },
+  "sidepanel_daily_import_mode_copy": {
+    "message": "새 흐름으로 복사",
+    "description": "가져오기 모드: 복사"
+  },
+  "sidepanel_daily_import_mode_overwrite": {
+    "message": "기존 흐름 덮어쓰기",
+    "description": "가져오기 모드: 덮어쓰기"
+  },
+  "sidepanel_daily_import_confirm": {
+    "message": "가져오기",
+    "description": "가져오기 확인"
+  },
+  "sidepanel_daily_import_cancel": {
+    "message": "취소",
+    "description": "가져오기 취소"
+  },
+  "sidepanel_daily_import_done": {
+    "message": "흐름 $COUNT$개를 가져왔습니다",
+    "description": "가져오기 완료",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "sidepanel_daily_import_failed": {
+    "message": "가져오지 못했습니다: $REASON$",
+    "description": "가져오기 실패",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "no response from background"
+      }
+    }
+  },
+  "sidepanel_daily_import_empty": {
+    "message": "가져올 흐름이 없습니다",
+    "description": "가져올 흐름 없음"
+  },
+  "sidepanel_daily_import_read_failed": {
+    "message": "파일을 읽지 못했습니다",
+    "description": "파일 읽기 실패"
+  },
+  "sidepanel_daily_var_required": {
+    "message": "필수",
+    "description": "필수 변수 표시"
+  },
+  "sidepanel_daily_var_default": {
+    "message": "기본값 $VALUE$",
+    "description": "변수 기본값",
+    "placeholders": {
+      "value": {
+        "content": "$1",
+        "example": "09:00"
+      }
+    }
+  },
+  "sidepanel_daily_run_already_queued": {
+    "message": "이미 실행 대기 중입니다",
+    "description": "지금 실행: 이미 큐에 있음"
+  },
+  "sidepanel_daily_error_var_required": {
+    "message": "$NAME$ 값을 입력해 주세요. 예약 실행은 값을 물어볼 수 없습니다",
+    "description": "예약 변수 값 없음",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "keyword"
+      }
+    }
+  },
+  "sidepanel_daily_error_var_pattern": {
+    "message": "$NAME$ 값이 흐름이 정한 형식과 맞지 않습니다",
+    "description": "예약 변수 형식 오류",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "keyword"
+      }
+    }
+  },
+  "sidepanel_daily_error_var_enum": {
+    "message": "$NAME$ 값은 $VALUES$ 중 하나여야 합니다",
+    "description": "예약 변수 선택지 오류",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "keyword"
+      },
+      "values": {
+        "content": "$2",
+        "example": "주문, 배송"
+      }
+    }
+  },
+  "sidepanel_daily_import_too_large": {
+    "message": "파일이 너무 큽니다 (최대 $MAX$MB)",
+    "description": "가져오기 파일 크기 초과",
+    "placeholders": {
+      "max": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "markedElementsLabel": {
+    "message": "마킹한 요소",
+    "description": "Label for the count of elements marked on the current page"
+  },
+  "backToHomeTooltip": {
+    "message": "처음으로",
+    "description": "Tooltip on the back button of the local model page"
+  },
+  "backButton": {
+    "message": "뒤로",
+    "description": "Label of the back button"
+  },
+  "localModelPageTitle": {
+    "message": "로컬 모델",
+    "description": "Title of the local model page in the popup"
+  },
+  "popup_title": {
+    "message": "ScaleMaker Chrome MCP",
+    "description": "팝업 헤더 제목"
+  },
+  "popup_conn_meta": {
+    "message": "마지막 확인 $TIME$",
+    "description": "연결 카드 캡션",
+    "placeholders": {
+      "port": {
+        "content": "$1"
+      },
+      "time": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_conn_meta_port": {
+    "message": "포트 $PORT$",
+    "description": "연결 카드 캡션 (확인 시각 없음)",
+    "placeholders": {
+      "port": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settings_title": {
+    "message": "동작 설정",
+    "description": "설정 카드 제목"
+  },
+  "popup_toggle_force_focus_label": {
+    "message": "강제 포커스",
+    "description": "토글 라벨"
+  },
+  "popup_toggle_force_focus_desc": {
+    "message": "도구가 실행될 때 크롬 창을 화면 맨 앞으로 가져옵니다",
+    "description": "토글 설명"
+  },
+  "popup_toggle_background_label": {
+    "message": "백그라운드 작업",
+    "description": "토글 라벨"
+  },
+  "popup_toggle_background_desc": {
+    "message": "보고 있는 탭과 포커스를 건드리지 않고 작업 탭에서 실행합니다",
+    "description": "토글 설명"
+  },
+  "popup_toggle_dedicated_label": {
+    "message": "전용 작업 창",
+    "description": "토글 라벨"
+  },
+  "popup_toggle_dedicated_desc": {
+    "message": "작업 탭을 별도 창에 모아 쓰던 창과 분리합니다",
+    "description": "토글 설명"
+  },
+  "popup_toggle_tabgroup_label": {
+    "message": "작업 탭 그룹 표시",
+    "description": "토글 라벨"
+  },
+  "popup_toggle_tabgroup_desc": {
+    "message": "작업 탭을 초록색 MCP 그룹으로 묶어 구분합니다",
+    "description": "토글 설명"
+  },
+  "popup_placement_label": {
+    "message": "작업 창 배치",
+    "description": "select 라벨"
+  },
+  "popup_placement_desc": {
+    "message": "전용 작업 창을 화면에서 어떻게 숨길지 정합니다",
+    "description": "select 설명"
+  },
+  "popup_placement_minimized": {
+    "message": "최소화 (권장)",
+    "description": "작업 창 배치 선택지"
+  },
+  "popup_placement_offscreen": {
+    "message": "화면 밖",
+    "description": "작업 창 배치 선택지"
+  },
+  "popup_placement_visible": {
+    "message": "보이게 (디버깅)",
+    "description": "작업 창 배치 선택지"
+  },
+  "popup_reset_defaults": {
+    "message": "무간섭 권장 설정으로 되돌리기",
+    "description": "텍스트 버튼"
+  },
+  "popup_reset_defaults_hint": {
+    "message": "전용 작업 창 켜기, 배치 최소화, 백그라운드 작업 켜기, 강제 포커스 끄기로 한 번에 되돌립니다",
+    "description": "텍스트 버튼 설명"
+  },
+  "popup_reset_done": {
+    "message": "무간섭 권장 설정을 적용했습니다",
+    "description": "안내 문구"
+  },
+  "popup_reset_failed": {
+    "message": "설정을 저장하지 못했습니다",
+    "description": "안내 문구"
+  },
+  "popup_prompt_title": {
+    "message": "Claude Code 자동 등록",
+    "description": "카드 제목"
+  },
+  "popup_prompt_hint": {
+    "message": "터미널의 claude 에 붙여넣으면 .mcp.json 이 자동으로 등록됩니다",
+    "description": "카드 설명"
+  },
+  "popup_prompt_copy": {
+    "message": "등록 prompt 복사하기",
+    "description": "주 버튼"
+  },
+  "popup_prompt_copied": {
+    "message": "복사됨",
+    "description": "복사 직후 버튼 문구"
+  },
+  "popup_prompt_show": {
+    "message": "내용 보기",
+    "description": "텍스트 버튼"
+  },
+  "popup_prompt_hide": {
+    "message": "내용 접기",
+    "description": "텍스트 버튼"
+  },
+  "popup_perms_title": {
+    "message": "권한 설정",
+    "description": "카드 제목"
+  },
+  "popup_perms_hint": {
+    "message": "아래 권한을 쓰려고 할 때, 토글이 꺼져 있으면 사용자에게 먼저 확인합니다",
+    "description": "카드 설명"
+  },
+  "popup_perm_camera": {
+    "message": "카메라",
+    "description": "권한 이름"
+  },
+  "popup_perm_microphone": {
+    "message": "마이크",
+    "description": "권한 이름"
+  },
+  "popup_perm_geolocation": {
+    "message": "위치 정보",
+    "description": "권한 이름"
+  },
+  "popup_perm_os_open": {
+    "message": "시스템 설정에서 $NAME$ 권한 열기",
+    "description": "권한 행의 설정 버튼",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_perm_os_unsupported": {
+    "message": "이 운영체제 ($OS$) 에서는 자동 열기를 지원하지 않습니다. $NAME$ 권한을 시스템 설정에서 직접 켜주세요.",
+    "description": "안내 alert",
+    "placeholders": {
+      "os": {
+        "content": "$1"
+      },
+      "name": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_perm_os_failed": {
+    "message": "시스템 설정을 열지 못했습니다. $NAME$ 권한을 직접 켜주세요.",
+    "description": "실패 alert",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_tools_title": {
+    "message": "복구와 진단",
+    "description": "카드 제목"
+  },
+  "popup_fr_button": {
+    "message": "강제 재연결",
+    "description": "보조 버튼"
+  },
+  "popup_fr_run": {
+    "message": "지금 재연결",
+    "description": "패널 안 실행 버튼"
+  },
+  "popup_fr_running": {
+    "message": "재연결 중",
+    "description": "실행 중 버튼 문구"
+  },
+  "popup_fr_idle": {
+    "message": "누르면 브릿지를 다시 띄웁니다",
+    "description": "요약 문구"
+  },
+  "popup_fr_progress": {
+    "message": "진행 중",
+    "description": "요약 문구"
+  },
+  "popup_fr_ok": {
+    "message": "연결됨 (pid $PID$)",
+    "description": "요약 문구",
+    "placeholders": {
+      "pid": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_fr_fail": {
+    "message": "$STAGE$ 단계에서 실패",
+    "description": "요약 문구",
+    "placeholders": {
+      "stage": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_fr_port_hint": {
+    "message": "포트 $PORT$",
+    "description": "카드 부제",
+    "placeholders": {
+      "port": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_fr_logs": {
+    "message": "로그 $COUNT$줄",
+    "description": "로그 접이식 제목",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_fr_stage_process_kill": {
+    "message": "1. 프로세스 종료",
+    "description": "재연결 단계"
+  },
+  "popup_fr_stage_port_free": {
+    "message": "2. 포트 해제 확인",
+    "description": "재연결 단계"
+  },
+  "popup_fr_stage_spawn": {
+    "message": "3. 브릿지 재시작",
+    "description": "재연결 단계"
+  },
+  "popup_fr_stage_handshake": {
+    "message": "4. 네이티브 핸드셰이크",
+    "description": "재연결 단계"
+  },
+  "popup_fr_stage_connect": {
+    "message": "5. 연결",
+    "description": "재연결 단계"
+  },
+  "popup_fr_stage_mcp_ping": {
+    "message": "6. MCP 초기화 핑",
+    "description": "재연결 단계"
+  },
+  "popup_fr_log_start": {
+    "message": "강제 재연결 시작 (포트 $PORT$)",
+    "description": "로그 줄",
+    "placeholders": {
+      "port": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_fr_log_ok": {
+    "message": "연결됨 (pid $PID$, 세션 $SID$)",
+    "description": "로그 줄",
+    "placeholders": {
+      "pid": {
+        "content": "$1"
+      },
+      "sid": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_fr_log_fail": {
+    "message": "$STAGE$ 단계 실패",
+    "description": "로그 줄",
+    "placeholders": {
+      "stage": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_diag_button": {
+    "message": "진단 리포트",
+    "description": "보조 버튼"
+  },
+  "popup_local_model_button": {
+    "message": "로컬 모델 관리",
+    "description": "보조 버튼 - 로컬 임베딩 모델 관리 화면 진입"
+  },
+  "popup_semantic_engine_init_failed": {
+    "message": "초기화 요청을 보내지 못했습니다: $ERR$",
+    "description": "시맨틱 엔진 초기화 실패 진행 문구",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clear_data_generic_error": {
+    "message": "데이터를 지우지 못했습니다",
+    "description": "데이터 삭제 실패의 서버 응답이 비어 있을 때 쓰는 대체 오류 메시지"
+  },
+  "popup_clear_data_failed": {
+    "message": "데이터를 지우지 못했습니다: $ERR$",
+    "description": "데이터 삭제 실패 진행 문구",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_model_switch_generic_error": {
+    "message": "모델을 전환하지 못했습니다",
+    "description": "모델 전환 실패의 서버 응답이 비어 있을 때 쓰는 대체 오류 메시지"
+  },
+  "popup_model_switch_failed": {
+    "message": "모델을 전환하지 못했습니다: $ERR$",
+    "description": "모델 전환 실패 진행 문구",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_diag_copy_json": {
+    "message": "JSON 복사",
+    "description": "버튼"
+  },
+  "popup_diag_run": {
+    "message": "자가 진단 실행",
+    "description": "버튼"
+  },
+  "popup_diag_running": {
+    "message": "실행 중",
+    "description": "버튼"
+  },
+  "popup_diag_section_env": {
+    "message": "환경",
+    "description": "섹션 제목"
+  },
+  "popup_diag_key_extension": {
+    "message": "확장",
+    "description": "표 항목 이름"
+  },
+  "popup_diag_section_bridge": {
+    "message": "브릿지 프로세스",
+    "description": "섹션 제목"
+  },
+  "popup_diag_key_uptime": {
+    "message": "가동 시간",
+    "description": "표 항목 이름"
+  },
+  "popup_diag_key_memory": {
+    "message": "메모리",
+    "description": "표 항목 이름"
+  },
+  "popup_diag_key_transports": {
+    "message": "활성 transport 수",
+    "description": "표 항목 이름"
+  },
+  "popup_diag_health_error": {
+    "message": "$ERR$ · $URL$/health 에 접근할 수 없습니다",
+    "description": "오류 문구",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      },
+      "url": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_diag_health_loading": {
+    "message": "/health 응답을 기다리는 중",
+    "description": "대기 문구"
+  },
+  "popup_diag_section_selftest": {
+    "message": "자가 진단 결과",
+    "description": "섹션 제목"
+  },
+  "popup_diag_copied": {
+    "message": "진단 JSON 을 클립보드에 복사했습니다",
+    "description": "알림"
+  },
+  "popup_diag_copy_failed": {
+    "message": "복사하지 못했습니다: $ERR$",
+    "description": "알림",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_diag_test_initialize_first": {
+    "message": "initialize 첫 회",
+    "description": "자가 진단 항목"
+  },
+  "popup_diag_test_initialize_second": {
+    "message": "initialize 두 번째 (다른 세션 유지)",
+    "description": "자가 진단 항목"
+  },
+  "popup_diag_test_health_pid": {
+    "message": "/health 가 bridge.pid 응답",
+    "description": "자가 진단 항목"
+  },
+  "popup_diag_test_pagehide": {
+    "message": "Chrome 144+ pagehide 이벤트 (정보)",
+    "description": "자가 진단 항목"
+  },
+  "popup_diag_test_env": {
+    "message": "CHROME_MCP_HOST 환경변수 (정보)",
+    "description": "자가 진단 항목"
+  },
+  "popup_diag_detail_session": {
+    "message": "세션 $SID$",
+    "description": "자가 진단 상세",
+    "placeholders": {
+      "sid": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_diag_detail_session_distinct": {
+    "message": "세션 $SID$ (첫 회와 다름)",
+    "description": "자가 진단 상세",
+    "placeholders": {
+      "sid": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_diag_detail_session_same": {
+    "message": "첫 회와 같은 세션 id 입니다",
+    "description": "자가 진단 상세"
+  },
+  "popup_diag_detail_pid": {
+    "message": "pid $PID$",
+    "description": "자가 진단 상세",
+    "placeholders": {
+      "pid": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_diag_detail_no_pid": {
+    "message": "pid 없음",
+    "description": "자가 진단 상세"
+  },
+  "popup_diag_detail_pagehide": {
+    "message": "정적 확인: 업스트림 PR #329 반영됨",
+    "description": "자가 진단 상세"
+  },
+  "popup_diag_detail_env": {
+    "message": "단위 테스트 10개 통과",
+    "description": "자가 진단 상세"
+  },
+  "options_page_title": {
+    "message": "유저스크립트 관리",
+    "description": "옵션 페이지 제목"
+  },
+  "options_emergency_desc": {
+    "message": "모든 유저스크립트를 한 번에 멈춥니다",
+    "description": "긴급 스위치 설명"
+  },
+  "options_form_hint": {
+    "message": "여러 값은 쉼표로 구분해 적습니다",
+    "description": "입력 도움말"
+  },
+  "options_userscript_apply_failed": {
+    "message": "실행하지 못했습니다: $ERR$",
+    "description": "유저스크립트 생성/실행 실패 결과 문구",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_prompt_body": {
+    "message": "지금 working dir (이 프로젝트 폴더) 의 .mcp.json 에 우리 chrome MCP (scalemaker-chrome-mcp) 를 등록해줘. ~/.claude.json 같은 전역 설정에는 손대지 마.\n\n규칙:\n- 이름: \"scalemaker-chrome-mcp-stdio\"\n- transport: stdio (HTTP 안 씀)\n- command: \"node\"\n- args: [\"<npm root -g 출력값>/scalemaker-chrome-mcp-bridge/dist/mcp/mcp-server-stdio.js\"]\n- env: { \"CHROME_PORT\": \"$PORT$\" }\n\n먼저 `npm root -g` 를 bash 로 실행해서 실제 경로 얻고, 그 다음에 working dir 의 .mcp.json (없으면 신설) 의 mcpServers.scalemaker-chrome-mcp-stdio 만 추가/갱신해줘. 기존 다른 server 항목은 보존.\n\n등록이 끝나면 아래 절차도 함께 안내해줘:\n1. Claude Code 를 Ctrl+C 두 번으로 종료 후 다시 실행 (mcp 서버 재로드)\n2. `/mcp` 입력해서 scalemaker-chrome-mcp-stdio 가 connected 상태인지 확인\n3. 확인 후 Esc 로 빠져나오기",
+    "description": "Claude Code 등록 prompt 본문",
+    "placeholders": {
+      "port": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_fr_state_running": {
+    "message": "진행 중",
+    "description": "재연결 단계 상태"
+  },
+  "popup_fr_state_success": {
+    "message": "성공",
+    "description": "재연결 단계 상태"
+  },
+  "popup_fr_state_fail": {
+    "message": "실패",
+    "description": "재연결 단계 상태"
+  },
+  "popup_fr_state_skipped": {
+    "message": "건너뜀",
+    "description": "재연결 단계 상태"
+  },
+  "popup_fr_state_idle": {
+    "message": "대기",
+    "description": "재연결 단계 상태"
+  },
+  "menu_open_sidepanel": {
+    "message": "사이드패널 열기",
+    "description": "아이콘 우클릭 메뉴"
+  },
+  "menu_daily_jobs": {
+    "message": "매일 작업",
+    "description": "아이콘 우클릭 메뉴"
+  },
+  "menu_record_start": {
+    "message": "이 탭에서 녹화 시작",
+    "description": "우클릭 메뉴, 녹화 아님"
+  },
+  "menu_record_stop": {
+    "message": "녹화 중지",
+    "description": "우클릭 메뉴, 녹화 중"
+  },
+  "menu_element_markers": {
+    "message": "요소 마킹",
+    "description": "아이콘 우클릭 메뉴"
+  },
+  "menu_web_editor_toggle": {
+    "message": "웹 에디터 켜기/끄기",
+    "description": "우클릭 메뉴"
+  },
+  "menu_quick_panel": {
+    "message": "빠른 패널",
+    "description": "아이콘 우클릭 메뉴"
+  },
+  "menu_userscripts": {
+    "message": "유저스크립트 관리",
+    "description": "아이콘 우클릭 메뉴"
+  },
+  "menu_force_reconnect": {
+    "message": "강제 재연결",
+    "description": "아이콘 우클릭 메뉴"
+  },
+  "menu_page_parent": {
+    "message": "ScaleMaker Chrome MCP",
+    "description": "페이지 우클릭 메뉴의 부모"
+  },
+  "menu_page_mark_element": {
+    "message": "이 요소 마킹",
+    "description": "페이지 우클릭 메뉴"
+  },
+  "menu_notification_title": {
+    "message": "ScaleMaker Chrome MCP",
+    "description": "우클릭 메뉴가 띄우는 알림 제목"
+  },
+  "menu_force_reconnect_ok": {
+    "message": "강제 재연결 성공 (브리지 pid $PID$)",
+    "description": "우클릭 메뉴 알림",
+    "placeholders": {
+      "pid": {
+        "content": "$1"
+      }
+    }
+  },
+  "menu_force_reconnect_fail": {
+    "message": "강제 재연결 실패 ($STAGE$ 단계)",
+    "description": "우클릭 메뉴 알림",
+    "placeholders": {
+      "stage": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_badge_recording": {
+    "message": "녹화 중",
+    "description": "녹화 도구 막대 배지: 녹화 중"
+  },
+  "recorder_badge_paused": {
+    "message": "잠시 멈춤",
+    "description": "녹화 도구 막대 배지: 일시정지 중"
+  },
+  "recorder_badge_steps": {
+    "message": "$COUNT$단계",
+    "description": "녹화 도구 막대: 지금까지 기록된 단계 수",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_opt_hide_values": {
+    "message": "입력한 글자 가리기",
+    "description": "녹화 도구 막대 체크박스: 입력값 숨기기"
+  },
+  "recorder_opt_highlight": {
+    "message": "클릭할 곳 표시",
+    "description": "녹화 도구 막대 체크박스: 마우스가 가리키는 요소 하이라이트"
+  },
+  "recorder_btn_collapse": {
+    "message": "접기",
+    "description": "녹화 도구 막대 버튼: 막대를 알약 모양으로 접기"
+  },
+  "recorder_btn_expand": {
+    "message": "펼치기",
+    "description": "녹화 도구 막대 버튼: 접힌 막대를 펼치기"
+  },
+  "recorder_btn_pause": {
+    "message": "일시정지",
+    "description": "녹화 도구 막대 버튼: 녹화 일시정지"
+  },
+  "recorder_btn_resume": {
+    "message": "이어서 녹화",
+    "description": "녹화 도구 막대 버튼: 일시정지 해제"
+  },
+  "recorder_btn_stop": {
+    "message": "녹화 끝내기",
+    "description": "녹화 도구 막대 버튼: 녹화 종료"
+  },
+  "recorder_timeline_title": {
+    "message": "녹화된 단계",
+    "description": "녹화 도구 막대 타임라인 제목"
+  },
+  "recorder_step_unknown": {
+    "message": "알 수 없는 단계",
+    "description": "타임라인 항목: 형식을 알 수 없는 단계"
+  },
+  "recorder_step_click": {
+    "message": "클릭: $SELECTOR$",
+    "description": "타임라인 항목: 클릭 단계",
+    "placeholders": {
+      "selector": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_step_dblclick": {
+    "message": "두 번 클릭: $SELECTOR$",
+    "description": "타임라인 항목: 더블클릭 단계",
+    "placeholders": {
+      "selector": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_step_fill": {
+    "message": "입력: $SELECTOR$",
+    "description": "타임라인 항목: 입력 단계(입력값은 표시하지 않음)",
+    "placeholders": {
+      "selector": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_step_scroll": {
+    "message": "스크롤($MODE$): y=$Y$, x=$X$",
+    "description": "타임라인 항목: 스크롤 단계",
+    "placeholders": {
+      "mode": {
+        "content": "$1"
+      },
+      "y": {
+        "content": "$2"
+      },
+      "x": {
+        "content": "$3"
+      }
+    }
+  },
+  "recorder_scroll_container": {
+    "message": "목록 안",
+    "description": "스크롤 단계의 대상: 특정 목록·컨테이너 안"
+  },
+  "recorder_scroll_page": {
+    "message": "페이지",
+    "description": "스크롤 단계의 대상: 페이지 전체"
+  },
+  "recorder_step_open_tab": {
+    "message": "새 탭 열기: $URL$",
+    "description": "타임라인 항목: 새 탭 열기 단계",
+    "placeholders": {
+      "url": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_step_switch_tab": {
+    "message": "다른 탭으로 이동",
+    "description": "타임라인 항목: 탭 전환 단계 라벨"
+  },
+  "recorder_step_url_contains": {
+    "message": "주소에 포함 $URL$",
+    "description": "타임라인 항목: 전환 대상 탭·프레임의 주소 조건",
+    "placeholders": {
+      "url": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_step_switch_frame": {
+    "message": "페이지 안 작은 화면으로 이동",
+    "description": "타임라인 항목: iframe 전환 단계 라벨"
+  },
+  "recorder_step_wait": {
+    "message": "기다리기: $TARGET$",
+    "description": "타임라인 항목: 대기 단계",
+    "placeholders": {
+      "target": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_step_generic": {
+    "message": "단계",
+    "description": "타임라인 항목: 형식을 표시할 수 없을 때의 대체 문구"
+  },
+  "recorder_step_target_document": {
+    "message": "문서 전체",
+    "description": "타임라인 항목: 특정 요소가 아니라 문서 전체가 대상일 때"
+  },
+  "recorder_session_untitled": {
+    "message": "이름 없는 녹화",
+    "description": "녹화 세션 기본 이름"
+  },
+  "recorder_step_navigate": {
+    "message": "이동: $1",
+    "placeholders": {
+      "target": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_step_key": {
+    "message": "키 입력: $1",
+    "placeholders": {
+      "target": {
+        "content": "$1"
+      }
+    }
+  },
+  "recorder_step_close_tab": {
+    "message": "탭 닫기"
+  },
+  "recorder_move_hint": {
+    "message": "끌어서 옆으로 옮기기. 이 줄을 누른 뒤 방향키를 눌러도 옮길 수 있습니다.",
+    "description": "Toolbar move hint (title/aria-label)"
+  },
+  "sidepanel_flow_delete_confirm_with_schedule": {
+    "message": "이 흐름과 여기에 걸린 예약을 함께 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다",
+    "description": "Confirm deleting a flow that has a schedule"
+  }
+}

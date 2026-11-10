@@ -1,0 +1,86 @@
+[
+  {
+    "cwd": "C:/PROJECTS/알파남 - 부업으로부자되는 방법/도구/검색형_예약파이프라인",
+    "expected": "검색형_예약파이프라인-8a905f84"
+  },
+  {
+    "cwd": "C:/PROJECTS/당근, 소모임 운영",
+    "expected": "당근, 소모임 운영-0cd65cbe"
+  },
+  {
+    "cwd": "C:/PROJECTS/GPT - CODEX/저관여웹/01-photo-kb",
+    "expected": "01-photo-kb-2b8ec5b2"
+  },
+  {
+    "cwd": "c:/projects/mollasseol/scripts",
+    "expected": "scripts-e21bd8b9"
+  },
+  {
+    "cwd": "C:/PROJECTS",
+    "expected": "PROJECTS-84e958df"
+  },
+  {
+    "cwd": "C:/Users/user",
+    "expected": "user-f46cb28a"
+  },
+  {
+    "cwd": "C:/Users/user/.claude",
+    "expected": "claude-7ef34abc"
+  },
+  {
+    "cwd": "C:/PROJECTS/scalemaker-chrome-mcp/../mollasseol",
+    "expected": "mollasseol-e7ad3d2b"
+  },
+  {
+    "cwd": "C:/PROJECTS/_작업물",
+    "expected": "_작업물-66209213"
+  },
+  {
+    "cwd": "C:\\PROJECTS\\mollasseol\\",
+    "expected": "mollasseol-e7ad3d2b"
+  },
+  {
+    "cwd": "\\\\?\\C:\\PROJECTS\\mollasseol",
+    "expected": "mollasseol-e7ad3d2b"
+  },
+  {
+    "cwd": "C:/PROJECTS/MOLLASSEOL",
+    "expected": "MOLLASSEOL-e7ad3d2b"
+  },
+  {
+    "cwd": "C:/PROJECTS/몰랐썰",
+    "expected": "몰랐썰-6f7e82de"
+  },
+  {
+    "cwd": "C:/PROJECTS/가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+    "expected": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가-db715a21"
+  },
+  {
+    "cwd": "C:\\",
+    "expected": "기타-3dc8472e"
+  },
+  {
+    "cwd": "C:/PROJECTS/😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "expected": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀-d89d9fe5"
+  },
+  {
+    "cwd": "\\\\server\\share\\proj",
+    "expected": "proj-289e4848"
+  },
+  {
+    "cwd": "C:/PROJECTS/web",
+    "expected": "web-e40758f7"
+  },
+  {
+    "cwd": "D:/work/web",
+    "expected": "web-b660d97b"
+  },
+  {
+    "cwd": "\\\\server\\share",
+    "expected": "share-05e24481"
+  },
+  {
+    "cwd": "C:/Users/user/.claude.",
+    "expected": "claude-cb06e90e"
+  }
+]

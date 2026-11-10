@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/*
+ * App background helpers.
+ *
+ * 2026-09-06(4단계): `.btn`/`.card`/`.mini`/`.input`/`.select`/`.textarea`/`.label`/`.badge`
+ * 계열은 지워진 노드 빌더(`entrypoints/builder`)의 `--rr-*` 토큰만 참조하던 죽은 규칙이라
+ * 삭제했다(grep 결과 사용처 0곳). consent/popup/welcome/sidepanel 은 모두 자체 클래스나
+ * `ac-*` 토큰을 쓴다.
+ */
+@layer base {
+  html,
+  body,
+  #app {
+    height: 100%;
+  }
+  body {
+    @apply bg-slate-50 text-slate-800;
+  }
+}

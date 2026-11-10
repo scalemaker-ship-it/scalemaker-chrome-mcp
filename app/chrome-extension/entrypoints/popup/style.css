@@ -1,0 +1,35 @@
+/*
+ * Popup page frame only.
+ *
+ * Every color, font, radius and control style comes from the shared token
+ * sheet (`ui/theme.css`, class `.agent-theme`) that the sidepanel, popup and
+ * options page all import. Nothing else belongs here: a rule in this file is
+ * unlayered, so even `* { padding: 0 }` would outrank the layered `.ac-*`
+ * primitives and quietly flatten every button, field and dialog.
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * 높이를 확정값으로 준다. `min-height`/`max-height` 만으로는 body 높이가 auto 라
+ * 안쪽의 `height: 100%` 가 풀리지 않고, 스크롤 영역이 자라다가 팝업 최대 높이에서
+ * 잘려 아래쪽 내용에 손이 닿지 않는다.
+ */
+html,
+body {
+  height: 600px;
+}
+
+body {
+  width: 400px;
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
